@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    drawables_reference.xml
+    ========================
+    This file DOCUMENTS all drawable references used across the layout files.
+    Each drawable listed here needs to be created in res/drawable/.
+
+    For shapes (bg_* prefixed), use <shape> or <layer-list> XML drawables.
+    For icons (ic_* prefixed), use Vector Drawable XMLs (from Material Icons or
+    equivalent Lucide icon conversions).
+
+    ─────────────────────────────────────────────────────────────────────────
+    SHAPE DRAWABLES (create as XML in res/drawable/)
+    ─────────────────────────────────────────────────────────────────────────
+
+    bg_circle_navy
+        shape: oval
+        solid: @color/navy_blue (#003e7a)
+
+    bg_circle_blue_600
+        shape: oval
+        solid: @color/blue_600 (#1d4ed8)
+
+    bg_rounded_8_white
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: @color/white
+
+    bg_rounded_8_gray50
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: @color/gray_50
+
+    bg_rounded_8_blue600
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: @color/blue_600
+
+    bg_rounded_8_white20
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: #33FFFFFF  (white at 20% opacity — for banner tiles on blue bg)
+
+    bg_rounded_8_orange50_bordered
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: #FFFFF7ED  (orange-50)
+        stroke: 1dp @color/warning_border
+
+    bg_rounded_8_bordered_gray200
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: @color/white
+        stroke: 2dp @color/gray_200
+
+    bg_rounded_10_blue_tint
+        shape: rectangle
+        cornerRadius: 10dp
+        solid: @color/background_blue_tint  (#e5eeff)
+
+    bg_rounded_12_navy
+        shape: rectangle
+        cornerRadius: 12dp
+        solid: @color/navy_blue  (#003e7a)
+
+    bg_rounded_12_success
+        shape: rectangle
+        cornerRadius: 12dp
+        solid: @color/status_verified_icon  (#4caf50)
+
+    bg_rounded_12_yellow_20
+        shape: rectangle
+        cornerRadius: 12dp
+        solid: @color/yellow_accent with 20% alpha (#33FECC00)
+
+    bg_rounded_12_error
+        shape: rectangle
+        cornerRadius: 12dp
+        solid: @color/error_bg_light
+        stroke: 2dp @color/error_border
+
+    bg_rounded_12_warning
+        shape: rectangle
+        cornerRadius: 12dp
+        solid: @color/warning_bg_light
+        stroke: 2dp @color/warning_border
+
+    bg_rounded_16_navy
+        shape: rectangle
+        cornerRadius: 16dp
+        solid: @color/navy_blue  (#003e7a)
+
+    bg_rounded_4_blue_tint
+        shape: rectangle
+        cornerRadius: 4dp
+        solid: @color/background_blue_tint  (#e5eeff)
+
+    bg_rounded_4_blue_tint_bordered
+        shape: rectangle
+        cornerRadius: 4dp
+        solid: @color/background_blue_tint
+        stroke: 1dp @color/border_gray
+
+    bg_badge_yellow
+        shape: rectangle
+        cornerRadius: 99dp  (pill shape)
+        solid: @color/yellow_accent  (#fecc00)
+
+    bg_badge_blue_dce9
+        shape: rectangle
+        cornerRadius: 12dp
+        solid: @color/background_blue_badge  (#dce9ff)
+        stroke: 1dp @color/border_gray
+
+    bg_badge_success
+        shape: rectangle
+        cornerRadius: 12dp
+        solid: @color/success_bg_light  (#e8f5e9)
+        stroke: 1dp @color/success_border
+
+    bg_badge_green_100
+        shape: rectangle
+        cornerRadius: 99dp  (pill)
+        solid: #FFD1FAE5  (green-100)
+
+    bg_badge_orange_200
+        shape: rectangle
+        cornerRadius: 99dp  (pill)
+        solid: #FFFED7AA  (orange-200)
+
+    bg_toggle_container
+        shape: rectangle
+        cornerRadius: 10dp
+        solid: @color/background_toggle  (#f0f2f7)
+
+    bg_toggle_selected
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: @color/white
+        elevation shadow: use StateListAnimator or wrap in CardView
+
+    bg_toggle_navy_selected
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: @color/navy_blue
+
+    bg_tab_selected_blue
+        shape: rectangle
+        cornerRadius: 6dp
+        solid: @color/blue_600
+
+    bg_tab_unselected
+        shape: rectangle
+        cornerRadius: 6dp
+        solid: @color/transparent
+
+    bg_qr_viewfinder
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: @color/gray_50
+        stroke: 2dp dashed @color/gray_300
+        (Note: dashed stroke requires a <layer-list> with dash effect via PathEffect in code,
+         or use a custom view. Simplest XML: use solid stroke without dash.)
+
+    bg_qr_icon_frame
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: @color/white
+        stroke: 4dp @color/gray_400
+
+    bg_error_banner
+        shape: rectangle
+        cornerRadius: 8dp
+        solid: #FFFFF1F2  (red-50)
+        stroke: 1dp #FFFECDD3  (red-200)
+
+    bg_ripple_rounded_8
+        ripple drawable wrapping bg_rounded_8_white
+
+    bg_ripple_rounded_10
+        ripple drawable wrapping @drawable/bg_rounded_10_white
+
+    bg_top_border_gray200
+        layer-list with a 1dp top inset View at gray_200 color
+        (simulates a top border / divider within a LinearLayout)
+
+    ─────────────────────────────────────────────────────────────────────────
+    ICON VECTOR DRAWABLES  (ic_* — convert from Lucide icons used in React)
+    ─────────────────────────────────────────────────────────────────────────
+
+    ic_graduation_cap       → GraduationCap (Lucide) / use School from Material Icons
+    ic_user_circle          → UserCircle2 (Lucide) / use AccountCircle from Material
+    ic_mail                 → Mail (Lucide) / use Email from Material
+    ic_lock                 → Lock (Lucide) / use Lock from Material
+    ic_chevron_left         → ChevronLeft (Lucide) / use ArrowBack from Material
+    ic_menu_horizontal      → AlignJustify (Lucide) / use Menu from Material
+    ic_building             → Building2 (Lucide) / use Business from Material
+    ic_clock                → Clock (Lucide) / use Schedule from Material
+    ic_qr_code              → QrCode (Lucide) / use QrCode2 from Material
+    ic_scan_line            → ScanLine (Lucide) / use DocumentScanner from Material
+    ic_shield_check         → ShieldCheck (Lucide) / use VerifiedUser from Material
+    ic_users                → Users (Lucide) / use Group from Material
+    ic_hash                 → Hash (Lucide) / use Tag from Material
+    ic_search               → Search (Lucide) / use Search from Material
+    ic_check_circle         → CheckCircle (Lucide) / use CheckCircle from Material
+    ic_x_circle             → XCircle (Lucide) / use Cancel from Material
+    ic_scan                 → Scan (Lucide) / use CropFree from Material
+    ic_check                → large checkmark path (for VERIFIED icon)
+    ic_info                 → Info (Lucide) / use Info from Material
+    ic_document             → FileText (Lucide) / use Description from Material
+    ic_home                 → Home (Lucide) / use Home from Material
+    ic_file_text            → FileText (Lucide) / use Article from Material
+    ic_book_open            → BookOpen (Lucide) / use MenuBook from Material
+    ic_alert_circle         → AlertCircle (Lucide) / use Error from Material
+    ic_student_placeholder  → placeholder image for student photo
+    ic_qr_placeholder       → placeholder QR pattern image
+
+    ─────────────────────────────────────────────────────────────────────────
+    COLOR STATE LIST SELECTORS
+    ─────────────────────────────────────────────────────────────────────────
+
+    selector_bottom_nav_tint  (in res/color/)
+        selected state: @color/blue_600
+        default state:  @color/gray_500
+-->
+<resources />

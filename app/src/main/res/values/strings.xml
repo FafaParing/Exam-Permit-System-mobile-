@@ -1,3 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Exam Permit System Mobile</string>
+
+    <!-- ── App / Global ───────────────────────────────────────── -->
+    <string name="app_name">ExamPermit</string>
+
+    <!-- ── activity_login.xml ─────────────────────────────────── -->
+    <string name="app_title_login">Examination Permit System</string>
+    <string name="login_subtitle">Sign in to access your account</string>
+    <string name="role_student">Student</string>
+    <string name="role_teacher">Teacher</string>
+    <string name="login_method_email">Email</string>
+    <string name="login_method_id">ID Number</string>
+    <string name="label_email">Email Address</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="label_student_id">Student ID</string>
+    <string name="hint_student_id">STU-2026-XXXXX</string>
+    <string name="label_password">Password</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="error_generic">System error. Please refresh.</string>
+    <string name="error_no_user">No user found for this role</string>
+
+    <!-- ── activity_teacher_dashboard.xml ────────────────────── -->
+    <string name="page_title_teacher">Setup Examination Scanner</string>
+    <string name="page_subtitle_teacher">Configure the session details before starting student verification.</string>
+    <string name="badge_primary_action">Primary Action</string>
+    <string name="label_current_class">CURRENT CLASS &amp; SECTION</string>
+    <string name="spinner_subject_prompt">Select a subject</string>
+    <string name="label_room_number">ROOM NUMBER</string>
+    <string name="label_time_slot">TIME SLOT</string>
+    <string name="label_verification_mode">Verification Mode</string>
+    <string name="subtitle_verification_mode">Choose how you want to verify credentials</string>
+    <string name="btn_qr_scan">QR Scan</string>
+    <string name="btn_manual">Manual</string>
+    <string name="banner_secure_title">Secure Verification</string>
+    <string name="banner_secure_body">All scans are logged and synchronized with the central academic database in real-time.</string>
+    <string name="btn_open_scanner">Open Scanner</string>
+    <string name="menu_logout">Log Out</string>
+
+    <!-- ── activity_verification_scanner_qr.xml ──────────────── -->
+    <string name="title_verification_scanner">Verification Scanner</string>
+    <string name="label_position_qr">Position QR code in frame</string>
+    <string name="btn_start_scan">Start Scan</string>
+
+    <!-- ── activity_verification_scanner_manual.xml ──────────── -->
+    <string name="title_manual_verification">Manual Verification</string>
+    <string name="title_enter_permit">Enter Permit Number</string>
+    <string name="subtitle_enter_permit">Type the student\'s permit number to verify their exam access.</string>
+    <string name="label_permit_number">PERMIT NUMBER</string>
+    <string name="hint_permit_number">e.g. PERMIT-2024-001</string>
+    <string name="btn_verify_permit">Verify Permit</string>
+    <string name="error_title_invalid">Invalid Permit</string>
+    <string name="error_title_late">Student is Late</string>
+    <string name="late_message">Student is late for this exam. Do you want to accept them?</string>
+    <string name="btn_accept_late">Accept Late</string>
+    <string name="btn_accept_late_entry">Accept Late Entry</string>
+    <string name="btn_reject">Reject</string>
+
+    <!-- ── activity_verification_result.xml ──────────────────── -->
+    <string name="title_scan_result">Scan Result</string>
+    <string name="status_verified">VERIFIED</string>
+    <string name="status_late_entry">LATE ENTRY</string>
+    <string name="status_rejected">REJECTED</string>
+    <string name="status_subtext_verified">Access Granted for Examination</string>
+    <string name="status_subtext_late">Student Arrived Late</string>
+    <string name="status_subtext_rejected">Access Denied</string>
+    <string name="label_student_profile">STUDENT PROFILE</string>
+    <string name="label_course_code">COURSE &amp; CODE</string>
+    <string name="label_permit_number">PERMIT NUMBER</string>
+    <string name="payment_status_paid">PAID</string>
+    <string name="payment_status_pending">PENDING</string>
+    <string name="btn_next_student">Next Student</string>
+    <string name="btn_view_record">View Detailed Record</string>
+
+    <!-- ── activity_student_dashboard.xml ────────────────────── -->
+    <string name="label_verified">Verified</string>
+    <string name="label_pending">Pending</string>
+    <string name="label_total">Total</string>
+    <string name="title_all_exam_activity">All Exam Activity</string>
+    <string name="no_exams_found">No exams found</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_my_permits">My Permits</string>
+    <string name="nav_records">Records</string>
+
+    <!-- ── activity_my_permits.xml ───────────────────────────── -->
+    <string name="term_prelim">Prelim</string>
+    <string name="term_midterm">Midterm</string>
+    <string name="term_prefinal">Pre-Finals</string>
+    <string name="term_finals">Finals</string>
+    <string name="permits_available">%d permits available</string>
+    <string name="label_professor">Professor</string>
+    <string name="late_entry_accepted_by">Late Entry Accepted by %s</string>
+    <string name="btn_view_qr">View QR Code</string>
+    <string name="btn_hide_qr">Hide QR Code</string>
+    <string name="label_scan_for_verification">Scan this QR code for verification</string>
+    <string name="no_permits_for_term">No permits found for %s</string>
+
+    <!-- ── Content descriptions (accessibility) ──────────────── -->
+    <string name="cd_logo">App logo</string>
+    <string name="cd_back">Go back</string>
+    <string name="cd_menu">More options</string>
+    <string name="cd_student_photo">Student photo</string>
+    <string name="cd_qr_code">QR code for permit verification</string>
+
 </resources>

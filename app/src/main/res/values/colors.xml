@@ -1,5 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+
+    <!-- =====================================================
+         Primary Brand Colors
+         ===================================================== -->
+    <!-- #003e7a — main navy blue used for buttons, headers, highlights -->
+    <color name="navy_blue">#FF003E7A</color>
+
+    <!-- #fecc00 — yellow accent for badges, indicators -->
+    <color name="yellow_accent">#FFFECC00</color>
+
+    <!-- =====================================================
+         Background Colors
+         ===================================================== -->
+    <!-- #f8f9ff — app background -->
+    <color name="background">#FFF8F9FF</color>
+
+    <!-- #e5eeff — light blue tint used for icon containers, photo backgrounds -->
+    <color name="background_blue_tint">#FFE5EEFF</color>
+
+    <!-- #dce9ff — slightly deeper blue tint for badge backgrounds -->
+    <color name="background_blue_badge">#FFDCE9FF</color>
+
+    <!-- #f0f2f7 — toggle/segment control background -->
+    <color name="background_toggle">#FFF0F2F7</color>
+
+    <!-- #e8eaf0 — card divider / subtle separator -->
+    <color name="divider_light">#FFE8EAF0</color>
+
+    <!-- White -->
     <color name="white">#FFFFFFFF</color>
+
+    <!-- =====================================================
+         Border / Stroke Colors
+         ===================================================== -->
+    <!-- #c2c6d3 — main border / stroke color -->
+    <color name="border_gray">#FFC2C6D3</color>
+
+    <!-- =====================================================
+         Text Colors
+         ===================================================== -->
+    <!-- #0b1c30 — primary / darkest text -->
+    <color name="text_primary">#FF0B1C30</color>
+
+    <!-- #424751 — secondary / body text -->
+    <color name="text_secondary">#FF424751</color>
+
+    <!-- #727783 — hint / caption text -->
+    <color name="text_hint">#FF727783</color>
+
+    <!-- #a8c4e0 — light blue text on dark navy backgrounds -->
+    <color name="text_on_navy_light">#FFA8C4E0</color>
+
+    <!-- #9ea3af — input placeholder / icon tint -->
+    <color name="text_placeholder">#FF9EA3AF</color>
+
+    <!-- =====================================================
+         Status / Semantic Colors
+         ===================================================== -->
+    <!-- Success green -->
+    <color name="status_verified_bg">#FF2E7D32</color>
+    <color name="status_verified_icon">#FF4CAF50</color>
+    <color name="status_verified_text">#FF2E7D32</color>
+    <color name="success_bg_light">#FFE8F5E9</color>
+    <color name="success_border">#FFA5D6A7</color>
+    <color name="success_text">#FF2E7D32</color>
+
+    <!-- Warning / Pending orange -->
+    <color name="status_pending_bg">#FFF57C00</color>
+    <color name="status_late_icon">#FFFF9800</color>
+    <color name="status_late_text">#FFE65100</color>
+    <color name="warning_bg_light">#FFFFF3E0</color>
+    <color name="warning_border">#FFFFCC80</color>
+    <color name="warning_text">#FFE65100</color>
+
+    <!-- Error / Rejected red -->
+    <color name="status_rejected_icon">#FFF44336</color>
+    <color name="status_rejected_text">#FFC62828</color>
+    <color name="error_bg_light">#FFFFEBEE</color>
+    <color name="error_border">#FFEF9A9A</color>
+    <color name="error_text">#FFC62828</color>
+
+    <!-- Standard blue-600 (used in StudentDashboard / MyPermits) -->
+    <color name="blue_600">#FF1D4ED8</color>
+    <color name="blue_50">#FFEFF6FF</color>
+
+    <!-- =====================================================
+         Miscellaneous
+         ===================================================== -->
+    <!-- Gray scale helpers -->
+    <color name="gray_50">#FFF9FAFB</color>
+    <color name="gray_100">#FFF3F4F6</color>
+    <color name="gray_200">#FFE5E7EB</color>
+    <color name="gray_300">#FFD1D5DB</color>
+    <color name="gray_400">#FF9CA3AF</color>
+    <color name="gray_500">#FF6B7280</color>
+    <color name="gray_600">#FF4B5563</color>
+    <color name="gray_700">#FF374151</color>
+    <color name="gray_900">#FF111827</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+
 </resources>
