@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/dashboard_icon"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/nav_permit"
+        android:icon="@drawable/permit_icon"
+        android:title="Permit" />
+
+    <item
+        android:id="@+id/nav_records"
+        android:icon="@drawable/records_icon"
+        android:title="Records" />
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Notifications -->
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/notification_icon"
+        android:title="Notifications"
+        app:showAsAction="ifRoom" />
+
+    <!-- Logout -->
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/menu_icon"
+        android:title="Logout"
+        app:showAsAction="ifRoom" />
+
+</menu>
